@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A365" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NotificaitonView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOA-WK-gXx">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yca-ju-Ci8">
+                            <rect key="frame" x="62" y="8" width="530" height="84"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bdc-mw-1Wx">
+                            <rect key="frame" x="4" y="25" width="96" height="96"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AIH-2r-402">
+                                    <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SzX-au-mFp">
+                                            <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_launcher" translatesAutoresizingMaskIntoConstraints="NO" id="Ybf-cU-gWB">
+                            <rect key="frame" x="0.0" y="20" width="60" height="60"/>
+                            <color key="backgroundColor" red="0.24313725490196078" green="0.73333333333333328" blue="0.39215686274509803" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="DuV-Sq-yLl"/>
+                                <constraint firstAttribute="width" constant="60" id="tz5-KG-wxB"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Yca-ju-Ci8" firstAttribute="leading" secondItem="Ybf-cU-gWB" secondAttribute="trailing" constant="2" id="24M-iw-YF8"/>
+                        <constraint firstItem="Ybf-cU-gWB" firstAttribute="leading" secondItem="eOA-WK-gXx" secondAttribute="leading" id="4Xk-5o-bR3"/>
+                        <constraint firstAttribute="bottom" secondItem="bdc-mw-1Wx" secondAttribute="bottom" constant="-21" id="9vC-h3-mOd"/>
+                        <constraint firstAttribute="trailing" secondItem="bdc-mw-1Wx" secondAttribute="trailing" constant="500" id="C8H-dd-C0V"/>
+                        <constraint firstAttribute="trailing" secondItem="Yca-ju-Ci8" secondAttribute="trailing" constant="8" id="KYq-0P-M4r"/>
+                        <constraint firstItem="Yca-ju-Ci8" firstAttribute="centerY" secondItem="eOA-WK-gXx" secondAttribute="centerY" id="TPO-Sa-v43"/>
+                        <constraint firstAttribute="bottom" secondItem="Yca-ju-Ci8" secondAttribute="bottom" constant="8" id="U7s-B3-NZZ"/>
+                        <constraint firstItem="Ybf-cU-gWB" firstAttribute="top" secondItem="eOA-WK-gXx" secondAttribute="top" constant="20" id="e5a-Yp-blB"/>
+                        <constraint firstItem="bdc-mw-1Wx" firstAttribute="leading" secondItem="eOA-WK-gXx" secondAttribute="leading" constant="4" id="i2J-0B-SB4"/>
+                        <constraint firstItem="bdc-mw-1Wx" firstAttribute="top" secondItem="eOA-WK-gXx" secondAttribute="top" constant="25" id="o2N-Aj-fMz"/>
+                        <constraint firstItem="Yca-ju-Ci8" firstAttribute="top" secondItem="eOA-WK-gXx" secondAttribute="top" constant="8" id="twa-YK-0BY"/>
+                        <constraint firstItem="Ybf-cU-gWB" firstAttribute="centerY" secondItem="Yca-ju-Ci8" secondAttribute="centerY" id="u73-fi-OPt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.16862745098039217" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eOA-WK-gXx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Evi-Qk-xc1"/>
+                <constraint firstItem="eOA-WK-gXx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vx9-1c-HxT"/>
+                <constraint firstAttribute="trailing" secondItem="eOA-WK-gXx" secondAttribute="trailing" id="peZ-1v-P0U"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="app_icon_img" destination="Ybf-cU-gWB" id="qmQ-4y-M40"/>
+                <outlet property="bgView" destination="eOA-WK-gXx" id="lzm-nq-piL"/>
+                <outlet property="message" destination="Yca-ju-Ci8" id="H2I-E1-IKm"/>
+            </connections>
+            <point key="canvasLocation" x="409" y="31"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_launcher" width="96" height="96"/>
+    </resources>
+</document>

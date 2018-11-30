@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customActiveJobsCellIdentifier" id="XfF-pI-mUn" customClass="CustomActiveJobsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XfF-pI-mUn" id="vLR-Gb-cAi">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLi-t7-Der">
+                        <rect key="frame" x="0.0" y="1" width="320" height="99"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="years of exp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0M-oh-YSq">
+                                <rect key="frame" x="14" y="66" width="184" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marketing Strategist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RN7-8u-mVH">
+                                <rect key="frame" x="14" y="30" width="163" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fil-u1-f7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mar 30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sz-th-4kB">
+                                <rect key="frame" x="265" y="10" width="47" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="9oA-ci-YUH"/>
+                                    <constraint firstAttribute="height" constant="20" id="JKC-s5-mni"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <color key="textColor" red="0.41568627450000001" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Syed Anwer Hussain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPc-uY-Q8B">
+                                <rect key="frame" x="14" y="10" width="135" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="cOu-Jj-IWB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="U0M-oh-YSq" secondAttribute="trailing" constant="122" id="0hH-dH-kyf"/>
+                            <constraint firstItem="RN7-8u-mVH" firstAttribute="leading" secondItem="JPc-uY-Q8B" secondAttribute="leading" id="70d-Bc-I0z"/>
+                            <constraint firstItem="U0M-oh-YSq" firstAttribute="leading" secondItem="yLi-t7-Der" secondAttribute="leading" constant="14" id="99f-br-SsF"/>
+                            <constraint firstItem="U0M-oh-YSq" firstAttribute="top" secondItem="RN7-8u-mVH" secondAttribute="bottom" constant="15" id="Gfu-fQ-NN2"/>
+                            <constraint firstAttribute="trailing" secondItem="RN7-8u-mVH" secondAttribute="trailing" constant="143" id="HDu-wO-cRZ"/>
+                            <constraint firstItem="JPc-uY-Q8B" firstAttribute="leading" secondItem="yLi-t7-Der" secondAttribute="leading" constant="14" id="NwY-oz-t3x"/>
+                            <constraint firstItem="JPc-uY-Q8B" firstAttribute="top" secondItem="yLi-t7-Der" secondAttribute="top" constant="10" id="QF2-I9-V1f"/>
+                            <constraint firstItem="0sz-th-4kB" firstAttribute="top" secondItem="yLi-t7-Der" secondAttribute="top" constant="10" id="WAk-si-EHL"/>
+                            <constraint firstItem="RN7-8u-mVH" firstAttribute="top" secondItem="JPc-uY-Q8B" secondAttribute="bottom" id="XrA-Y1-wdx"/>
+                            <constraint firstItem="RN7-8u-mVH" firstAttribute="leading" secondItem="yLi-t7-Der" secondAttribute="leading" constant="14" id="aua-eZ-ByY"/>
+                            <constraint firstItem="0sz-th-4kB" firstAttribute="leading" secondItem="JPc-uY-Q8B" secondAttribute="trailing" constant="116" id="bLV-qe-3Lb"/>
+                            <constraint firstAttribute="trailing" secondItem="0sz-th-4kB" secondAttribute="trailing" constant="8" id="oAk-FA-mJR"/>
+                            <constraint firstAttribute="bottom" secondItem="U0M-oh-YSq" secondAttribute="bottom" constant="11.5" id="trg-2z-eqn"/>
+                            <constraint firstItem="U0M-oh-YSq" firstAttribute="leading" secondItem="RN7-8u-mVH" secondAttribute="leading" id="ywL-rP-Ceb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.85091763734817505" green="0.85101717710494995" blue="0.85087186098098755" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="yLi-t7-Der" firstAttribute="leading" secondItem="vLR-Gb-cAi" secondAttribute="leading" id="2oN-lY-4g6"/>
+                    <constraint firstAttribute="trailing" secondItem="yLi-t7-Der" secondAttribute="trailing" id="4er-Eb-Vrv"/>
+                    <constraint firstAttribute="bottom" secondItem="yLi-t7-Der" secondAttribute="bottom" constant="-0.5" id="Bmk-sO-lBT"/>
+                    <constraint firstItem="yLi-t7-Der" firstAttribute="top" secondItem="vLR-Gb-cAi" secondAttribute="top" constant="1" id="Vfs-21-Zzq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backGroundView" destination="yLi-t7-Der" id="I8I-Fj-XXa"/>
+                <outlet property="expLabel" destination="U0M-oh-YSq" id="6JK-1c-WUD"/>
+                <outlet property="jobDateLbl" destination="0sz-th-4kB" id="1Mc-BD-KHs"/>
+                <outlet property="jobTitleLbl" destination="RN7-8u-mVH" id="2qa-yw-MwW"/>
+                <outlet property="userTitleLbl" destination="JPc-uY-Q8B" id="K8o-7f-y9h"/>
+            </connections>
+            <point key="canvasLocation" x="-179" y="-41"/>
+        </tableViewCell>
+    </objects>
+</document>

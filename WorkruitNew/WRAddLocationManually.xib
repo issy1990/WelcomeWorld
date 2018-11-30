@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+        <array key="SourceSansPro-Semibold.ttf">
+            <string>SourceSansPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WRAddLocationManually">
+            <connections>
+                <outlet property="myView" destination="OBo-sk-dzF" id="eb6-D1-lVx"/>
+                <outlet property="table_view" destination="TYb-Wl-As6" id="m3h-fi-TaR"/>
+                <outlet property="view" destination="bM0-SD-SDf" id="EZU-d5-QJJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bM0-SD-SDf">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBo-sk-dzF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hv-ap-PTh">
+                            <rect key="frame" x="327" y="20" width="48" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="Byl-lD-2c0"/>
+                                <constraint firstAttribute="width" constant="48" id="pGA-Rb-zzw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="14"/>
+                            <state key="normal" title="Save"/>
+                            <connections>
+                                <action selector="saveButtonAction:" destination="-1" eventType="touchUpInside" id="kOo-HO-KZn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYv-yU-Gy8">
+                            <rect key="frame" x="278" y="20" width="48" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="W5G-mH-Siy"/>
+                                <constraint firstAttribute="height" constant="42" id="y9f-wJ-HY7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="14"/>
+                            <state key="normal" title="All"/>
+                            <connections>
+                                <action selector="saveButtonAction:" destination="-1" eventType="touchUpInside" id="8y6-FB-HcO"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Cities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERy-SF-Fyr">
+                            <rect key="frame" x="112.5" y="30" width="150" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Vrb-za-hAX"/>
+                                <constraint firstAttribute="height" constant="22" id="gcD-Z4-PdG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJN-jW-04M">
+                            <rect key="frame" x="0.0" y="20" width="48" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="Udw-75-l8z"/>
+                                <constraint firstAttribute="width" constant="48" id="sQc-1A-UcS"/>
+                            </constraints>
+                            <state key="normal" image="back_button"/>
+                            <connections>
+                                <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="Ygh-5V-6RG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.24313725489999999" green="0.73333333329999995" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1Hv-ap-PTh" secondAttribute="trailing" id="5xY-mp-KCT"/>
+                        <constraint firstItem="cJN-jW-04M" firstAttribute="leading" secondItem="OBo-sk-dzF" secondAttribute="leading" id="7vg-x1-KfX"/>
+                        <constraint firstAttribute="bottom" secondItem="cJN-jW-04M" secondAttribute="bottom" constant="2" id="RmC-EW-pfD"/>
+                        <constraint firstAttribute="height" constant="64" id="Xgd-oq-4Do"/>
+                        <constraint firstItem="1Hv-ap-PTh" firstAttribute="leading" secondItem="lYv-yU-Gy8" secondAttribute="trailing" constant="1" id="bdE-me-EgO"/>
+                        <constraint firstAttribute="bottom" secondItem="ERy-SF-Fyr" secondAttribute="bottom" constant="12" id="f0x-so-8ct"/>
+                        <constraint firstAttribute="bottom" secondItem="lYv-yU-Gy8" secondAttribute="bottom" constant="2" id="uL5-og-4DT"/>
+                        <constraint firstAttribute="bottom" secondItem="1Hv-ap-PTh" secondAttribute="bottom" constant="2" id="vkO-rE-9iI"/>
+                        <constraint firstItem="ERy-SF-Fyr" firstAttribute="centerX" secondItem="OBo-sk-dzF" secondAttribute="centerX" id="ztY-4y-kr1"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TYb-Wl-As6">
+                    <rect key="frame" x="0.0" y="102" width="375" height="515"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6Jj-5b-tXy"/>
+                        <outlet property="delegate" destination="-1" id="Vxg-lB-sv9"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select upto 3 cities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgW-Nf-9hr">
+                    <rect key="frame" x="0.0" y="62" width="375" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="KeT-xK-JF4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                    <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OBo-sk-dzF" firstAttribute="top" secondItem="bM0-SD-SDf" secondAttribute="top" id="BIe-84-7kO"/>
+                <constraint firstItem="OBo-sk-dzF" firstAttribute="leading" secondItem="bM0-SD-SDf" secondAttribute="leading" id="Cgf-yZ-6Co"/>
+                <constraint firstItem="TgW-Nf-9hr" firstAttribute="top" secondItem="OBo-sk-dzF" secondAttribute="bottom" constant="-2" id="HAJ-3A-UYe"/>
+                <constraint firstAttribute="trailing" secondItem="OBo-sk-dzF" secondAttribute="trailing" id="Kwx-EH-j7e"/>
+                <constraint firstAttribute="trailing" secondItem="TgW-Nf-9hr" secondAttribute="trailing" id="YHy-yO-dAe"/>
+                <constraint firstItem="TYb-Wl-As6" firstAttribute="leading" secondItem="bM0-SD-SDf" secondAttribute="leading" id="g8u-c4-eps"/>
+                <constraint firstItem="TgW-Nf-9hr" firstAttribute="leading" secondItem="bM0-SD-SDf" secondAttribute="leading" id="hEH-e7-XE6"/>
+                <constraint firstItem="TYb-Wl-As6" firstAttribute="top" secondItem="TgW-Nf-9hr" secondAttribute="bottom" id="qH4-91-LEG"/>
+                <constraint firstAttribute="bottom" secondItem="TYb-Wl-As6" secondAttribute="bottom" constant="50" id="vOp-Ew-h5P"/>
+                <constraint firstAttribute="trailing" secondItem="TYb-Wl-As6" secondAttribute="trailing" id="xPa-2s-1DG"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_button" width="22" height="22"/>
+    </resources>
+</document>

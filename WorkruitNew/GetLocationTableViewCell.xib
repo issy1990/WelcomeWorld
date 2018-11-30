@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GetCurrentLocationCellIdentifier" rowHeight="80" id="RIT-KT-T8P" customClass="GetLocationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RIT-KT-T8P" id="TVA-cw-38N">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Skills" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fzK-Kd-TQZ" customClass="CustomTextField">
+                        <rect key="frame" x="15" y="20" width="297" height="34"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="QWz-Ku-HZD"/>
+                        </constraints>
+                        <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNl-it-pqE">
+                        <rect key="frame" x="15" y="0.0" width="297" height="24"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="F00-8f-mzi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="11"/>
+                        <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qv5-qY-SD0">
+                        <rect key="frame" x="15" y="54" width="297" height="1"/>
+                        <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="04K-Sp-A6m"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzR-HN-NM4">
+                        <rect key="frame" x="70" y="63" width="180" height="30"/>
+                        <state key="normal" title="USE CURRENT LOCATION"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fzK-Kd-TQZ" secondAttribute="trailing" constant="8" id="1ru-lU-8Mi"/>
+                    <constraint firstItem="NzR-HN-NM4" firstAttribute="centerX" secondItem="TVA-cw-38N" secondAttribute="centerX" id="3N6-ND-iaC"/>
+                    <constraint firstAttribute="trailing" secondItem="mNl-it-pqE" secondAttribute="trailing" constant="8" id="Aix-8v-plc"/>
+                    <constraint firstItem="NzR-HN-NM4" firstAttribute="top" secondItem="Qv5-qY-SD0" secondAttribute="bottom" constant="8" id="FBR-qo-s4K"/>
+                    <constraint firstItem="Qv5-qY-SD0" firstAttribute="trailing" secondItem="TVA-cw-38N" secondAttribute="trailingMargin" id="Neq-0y-QWd"/>
+                    <constraint firstItem="fzK-Kd-TQZ" firstAttribute="leading" secondItem="mNl-it-pqE" secondAttribute="leading" id="TwA-im-tHN"/>
+                    <constraint firstItem="fzK-Kd-TQZ" firstAttribute="top" secondItem="mNl-it-pqE" secondAttribute="bottom" constant="-4" id="Zwa-5s-xJk"/>
+                    <constraint firstItem="Qv5-qY-SD0" firstAttribute="top" secondItem="fzK-Kd-TQZ" secondAttribute="bottom" id="fda-xI-aDU"/>
+                    <constraint firstItem="mNl-it-pqE" firstAttribute="leading" secondItem="TVA-cw-38N" secondAttribute="leading" constant="15" id="mDB-hX-Q2t"/>
+                    <constraint firstItem="Qv5-qY-SD0" firstAttribute="leading" secondItem="fzK-Kd-TQZ" secondAttribute="leading" id="t64-ir-3LD"/>
+                    <constraint firstItem="mNl-it-pqE" firstAttribute="top" secondItem="TVA-cw-38N" secondAttribute="top" id="tks-vg-EHg"/>
+                    <constraint firstItem="fzK-Kd-TQZ" firstAttribute="top" secondItem="mNl-it-pqE" secondAttribute="bottom" constant="-4" id="var-qf-Faf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ValueTF" destination="fzK-Kd-TQZ" id="697-3W-b5i"/>
+                <outlet property="cureentLocation" destination="NzR-HN-NM4" id="G2h-G6-SdU"/>
+                <outlet property="titleLbl" destination="mNl-it-pqE" id="k2i-Qd-ObW"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="96"/>
+        </tableViewCell>
+    </objects>
+</document>

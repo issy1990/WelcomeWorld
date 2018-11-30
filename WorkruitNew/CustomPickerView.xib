@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CustomPickerViewIdentifier" id="iN0-l3-epB" customClass="CustomPickerView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="257"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wV9-E5-Qox">
+                    <rect key="frame" x="0.0" y="40" width="600" height="217"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="NVG-Cf-tUh"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="COS-ST-p6v"/>
+                    </connections>
+                </pickerView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wcJ-PH-15q">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csU-DR-EFX">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yO-iH-mQH">
+                    <rect key="frame" x="525" y="4" width="65" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="Tbt-DH-Wft"/>
+                        <constraint firstAttribute="height" constant="36" id="llm-aO-1nQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="doneClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="clM-Za-uKs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEu-ve-qcz">
+                    <rect key="frame" x="10" y="4" width="65" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="sY3-nk-1KL"/>
+                        <constraint firstAttribute="width" constant="65" id="uuS-h5-y3t"/>
+                    </constraints>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="wKr-QU-hlg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7yO-iH-mQH" secondAttribute="trailing" constant="10" id="2UY-2b-KUw"/>
+                <constraint firstItem="7yO-iH-mQH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="LOU-lU-XXk"/>
+                <constraint firstItem="wV9-E5-Qox" firstAttribute="top" secondItem="7yO-iH-mQH" secondAttribute="bottom" id="Mi6-b4-Bve"/>
+                <constraint firstItem="wV9-E5-Qox" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nie-bI-Xn6"/>
+                <constraint firstAttribute="trailing" secondItem="wV9-E5-Qox" secondAttribute="trailing" id="QeV-Yh-psz"/>
+                <constraint firstAttribute="bottom" secondItem="wV9-E5-Qox" secondAttribute="bottom" id="RVt-Un-eVy"/>
+                <constraint firstItem="MEu-ve-qcz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Sfu-sA-fjt"/>
+                <constraint firstItem="MEu-ve-qcz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="m81-q9-B6h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancel_button" destination="MEu-ve-qcz" id="FrY-xb-whQ"/>
+                <outlet property="divider" destination="csU-DR-EFX" id="zSM-74-sSC"/>
+                <outlet property="done_button" destination="7yO-iH-mQH" id="sFd-4j-935"/>
+                <outlet property="picker_view" destination="wV9-E5-Qox" id="Jee-Nl-IUl"/>
+            </connections>
+            <point key="canvasLocation" x="321" y="75.5"/>
+        </view>
+    </objects>
+</document>

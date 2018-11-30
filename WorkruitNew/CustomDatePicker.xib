@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JQi-7E-n5D" customClass="CustomDatePicker">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="262"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mae-SZ-V1Y">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESX-ss-CoE">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDM-ph-YO6">
+                    <rect key="frame" x="524" y="4" width="65" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="Ybq-hg-Zap"/>
+                        <constraint firstAttribute="height" constant="36" id="qxe-WL-w4x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="doneClicked:" destination="JQi-7E-n5D" eventType="touchUpInside" id="Z1S-ZT-DgO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdQ-Y3-Sui">
+                    <rect key="frame" x="10" y="4" width="65" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="ffr-uI-8rO"/>
+                        <constraint firstAttribute="height" constant="36" id="jAl-Ii-Z4H"/>
+                    </constraints>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelClicked:" destination="JQi-7E-n5D" eventType="touchUpInside" id="EE9-ru-sPf"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="yrF-6t-fRF">
+                    <rect key="frame" x="0.0" y="45" width="600" height="217"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="217" id="uJt-s7-jdv"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="505848237.691787">
+                        <!--2017-01-11 17:23:57 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yrF-6t-fRF" secondAttribute="trailing" id="AhC-3i-DwR"/>
+                <constraint firstItem="TdQ-Y3-Sui" firstAttribute="leading" secondItem="JQi-7E-n5D" secondAttribute="leading" constant="10" id="IFQ-5T-BOj"/>
+                <constraint firstAttribute="trailing" secondItem="QDM-ph-YO6" secondAttribute="trailing" constant="11" id="KFy-jR-Vub"/>
+                <constraint firstAttribute="bottom" secondItem="yrF-6t-fRF" secondAttribute="bottom" id="QvE-GL-sIx"/>
+                <constraint firstItem="QDM-ph-YO6" firstAttribute="top" secondItem="JQi-7E-n5D" secondAttribute="top" constant="4" id="nje-ki-Pak"/>
+                <constraint firstItem="TdQ-Y3-Sui" firstAttribute="top" secondItem="JQi-7E-n5D" secondAttribute="top" constant="4" id="oCa-AI-AUX"/>
+                <constraint firstItem="yrF-6t-fRF" firstAttribute="leading" secondItem="JQi-7E-n5D" secondAttribute="leading" id="qGh-eJ-muR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancel_button" destination="TdQ-Y3-Sui" id="LDM-d1-rD3"/>
+                <outlet property="date_picker" destination="yrF-6t-fRF" id="Gzn-VS-mzO"/>
+                <outlet property="divider" destination="ESX-ss-CoE" id="hqW-bQ-mvA"/>
+                <outlet property="done_button" destination="QDM-ph-YO6" id="gOv-Rs-5cj"/>
+            </connections>
+            <point key="canvasLocation" x="229" y="104"/>
+        </view>
+    </objects>
+</document>

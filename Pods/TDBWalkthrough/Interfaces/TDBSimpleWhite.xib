@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDBSimpleWhite">
+            <connections>
+                <outlet property="desc" destination="SWr-H1-wZ5" id="Cci-Ps-jFK"/>
+                <outlet property="getStarted" destination="4TK-Lv-VfM" id="8FV-zR-BzU"/>
+                <outlet property="imageView" destination="wgc-Px-reD" id="oNJ-e4-YdC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wgc-Px-reD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWr-H1-wZ5">
+                    <rect key="frame" x="139" y="450" width="42" height="11"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TK-Lv-VfM">
+                    <rect key="frame" x="52" y="369" width="216" height="36"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.47843137254901957" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4TK-Lv-VfM" secondAttribute="height" multiplier="6:1" id="Daz-5K-4gd"/>
+                    </constraints>
+                    <state key="normal" title="Get Started">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="2"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonTouchUpInside:" destination="-1" eventType="touchUpInside" id="W9n-0T-gS2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.24313725490196078" green="0.73333333333333328" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4TK-Lv-VfM" secondAttribute="bottom" constant="75" id="28T-F1-s7h"/>
+                <constraint firstAttribute="bottom" secondItem="wgc-Px-reD" secondAttribute="bottom" id="6aq-tI-b9S"/>
+                <constraint firstItem="wgc-Px-reD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ae1-Ap-6Ib"/>
+                <constraint firstItem="SWr-H1-wZ5" firstAttribute="top" secondItem="4TK-Lv-VfM" secondAttribute="bottom" constant="45" id="Hu5-7f-P3b"/>
+                <constraint firstItem="4TK-Lv-VfM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="300:667" id="Pn4-RA-tUF"/>
+                <constraint firstItem="wgc-Px-reD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VCw-SX-I1O"/>
+                <constraint firstItem="4TK-Lv-VfM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bvm-pK-ep0"/>
+                <constraint firstItem="SWr-H1-wZ5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dsV-Ll-AHa"/>
+                <constraint firstAttribute="bottom" secondItem="SWr-H1-wZ5" secondAttribute="bottom" constant="19" id="rNK-OE-LUx"/>
+                <constraint firstAttribute="trailing" secondItem="wgc-Px-reD" secondAttribute="trailing" id="yNz-uA-2Id"/>
+            </constraints>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

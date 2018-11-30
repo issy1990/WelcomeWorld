@@ -1,0 +1,1 @@
+../../../RSKImageCropper/rskimagecropper/RSKImageCropper.h

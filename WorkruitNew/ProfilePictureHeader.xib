@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+        <array key="SourceSansPro-Semibold.ttf">
+            <string>SourceSansPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfilePictureHeader">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="b6b-t2-G3b">
+                    <rect key="frame" x="250" y="20" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="A0k-p0-hv2"/>
+                        <constraint firstAttribute="width" constant="100" id="fDH-qQ-whJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anwer Hussain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l0-dA-dmz">
+                    <rect key="frame" x="181" y="128" width="239" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Omc-5L-BDp"/>
+                        <constraint firstAttribute="width" constant="239" id="uRX-9b-NgR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                    <color key="textColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5H-mC-sgI">
+                    <rect key="frame" x="181" y="153" width="239" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="IXL-8V-Eic"/>
+                        <constraint firstAttribute="width" constant="239" id="hUi-Tu-vfT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="13"/>
+                    <state key="normal" title="Edit Company Profile">
+                        <color key="titleColor" red="0.20000000000000001" green="0.47843137254901957" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w5H-mC-sgI" firstAttribute="centerX" secondItem="9l0-dA-dmz" secondAttribute="centerX" id="1NJ-iI-hTJ"/>
+                <constraint firstItem="b6b-t2-G3b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="HmK-ub-MlJ"/>
+                <constraint firstItem="w5H-mC-sgI" firstAttribute="top" secondItem="9l0-dA-dmz" secondAttribute="bottom" constant="4" id="PZz-WP-ral"/>
+                <constraint firstItem="b6b-t2-G3b" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TWd-76-gzC"/>
+                <constraint firstItem="9l0-dA-dmz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e9K-zk-aTf"/>
+                <constraint firstItem="9l0-dA-dmz" firstAttribute="top" secondItem="b6b-t2-G3b" secondAttribute="bottom" constant="8" id="f9f-by-tmf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="editButtonAction" destination="w5H-mC-sgI" id="g3h-Gy-pxl"/>
+                <outlet property="nameLbl" destination="9l0-dA-dmz" id="bYm-vL-wu2"/>
+                <outlet property="profile_image" destination="b6b-t2-G3b" id="0DE-Yi-l6M"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="company_placeholder" width="72" height="72"/>
+    </resources>
+</document>
