@@ -31,10 +31,13 @@ PODS:
   - CHDropDownTextField (1.0.0)
   - CLLocationManager-blocks (1.3.3)
   - ClusterPrePermissions (0.8.1)
+  - Crashlytics (3.10.5):
+    - Fabric (~> 1.7.9)
   - CWStatusBarNotification (2.3.5)
   - EGOCache (2.2.0)
   - EGOImageLoading (0.0.1):
     - EGOCache
+  - Fabric (1.7.9)
   - Firebase/Core (4.5.0):
     - FirebaseAnalytics (= 4.0.4)
     - FirebaseCore (= 4.0.10)
@@ -47,10 +50,10 @@ PODS:
   - FirebaseAnalytics (4.0.4):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - nanopb (~> 0.3)
   - FirebaseCore (4.0.10):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - nanopb (~> 0.3)
   - FirebaseDatabase (4.1.0):
     - FirebaseAnalytics (~> 4.0)
@@ -69,7 +72,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/Logger (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - HMSegmentedControl (1.5.3)
   - leveldb-library (1.20)
@@ -94,8 +97,8 @@ PODS:
   - SVPullToRefresh_Bell (1.0.1)
   - TDBWalkthrough (1.0.1)
   - TTRangeSlider (1.0.5)
-  - UILabel+ContentSize (1.0.3)
-  - UITextView+Placeholder (1.2.0)
+  - "UILabel+ContentSize (1.0.3)"
+  - "UITextView+Placeholder (1.2.0)"
   - WYPopoverController (0.3.9)
 
 DEPENDENCIES:
@@ -111,8 +114,10 @@ DEPENDENCIES:
   - CHDropDownTextField
   - CLLocationManager-blocks (~> 1.3.3)
   - ClusterPrePermissions (~> 0.1)
+  - Crashlytics
   - CWStatusBarNotification (~> 2.3.5)
   - EGOImageLoading
+  - Fabric
   - Firebase/Core
   - Firebase/Database
   - Firebase/Messaging
@@ -125,9 +130,55 @@ DEPENDENCIES:
   - SVPullToRefresh_Bell (~> 1.0)
   - TDBWalkthrough (~> 1.0)
   - TTRangeSlider (~> 1.0.5)
-  - UILabel+ContentSize (~> 1.0)
-  - UITextView+Placeholder
+  - "UILabel+ContentSize (~> 1.0)"
+  - "UITextView+Placeholder"
   - WYPopoverController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - AESCrypt-ObjC
+    - AFNetworking
+    - AppsFlyerFramework
+    - ASJTagsView
+    - AWSCognito
+    - AWSCognitoIdentityProvider
+    - AWSCore
+    - AWSS3
+    - BRWordCounter
+    - CHDropDownTextField
+    - CLLocationManager-blocks
+    - ClusterPrePermissions
+    - Crashlytics
+    - CWStatusBarNotification
+    - EGOCache
+    - EGOImageLoading
+    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseDatabase
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FMDB
+    - GoogleToolboxForMac
+    - HMSegmentedControl
+    - leveldb-library
+    - MBProgressHUD
+    - Mixpanel
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedPager
+    - nanopb
+    - Protobuf
+    - RSKImageCropper
+    - SDWebImage
+    - SVPullToRefresh_Bell
+    - TDBWalkthrough
+    - TTRangeSlider
+    - "UILabel+ContentSize"
+    - "UITextView+Placeholder"
+    - WYPopoverController
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
@@ -143,9 +194,11 @@ SPEC CHECKSUMS:
   CHDropDownTextField: d8a2843acbdd75b5b8d26b27dca9e07c2b1ae5e1
   CLLocationManager-blocks: ae34b44992b3d26de10d27d51043a123444efb1b
   ClusterPrePermissions: 168c127a658e423062550dd9c56fe26042a58bce
+  Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
   CWStatusBarNotification: 3d2738b25c3207f60cc50201388d3c96182545ff
   EGOCache: 191fd213da6804d487b49b1a91772ba904f3e324
   EGOImageLoading: 99d7c4a9fb5a192ab37979b63ea03efc7097fe8e
+  Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
   Firebase: d83d287bdb6b1c78320561482706d1fcfc8ddfc1
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseCore: da5e8e372cb6046212739a4d81e42d32c22907cc
@@ -168,10 +221,10 @@ SPEC CHECKSUMS:
   SVPullToRefresh_Bell: f9460c49e97e5d7dd938c9bac3628d17d3a51de9
   TDBWalkthrough: 4e4f585dc42744f7612f2cea23ee5806b772d645
   TTRangeSlider: 2f2ce4a33b32bb323c6575b9f5161c4664459c58
-  UILabel+ContentSize: ca71fe5d87afd752e53a34466e52598d65db4705
-  UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
+  "UILabel+ContentSize": ca71fe5d87afd752e53a34466e52598d65db4705
+  "UITextView+Placeholder": 77680995fcdd07c3f52ec92fe1150874a2ac89ff
   WYPopoverController: a9db25ac2841a686acdc0f3a99bdb21545db32f4
 
-PODFILE CHECKSUM: 9997c7afe568331ac635085470d108f8d428af44
+PODFILE CHECKSUM: 7d181c48a0a8074831d4166b9364e8def030d0b4
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

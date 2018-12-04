@@ -34,6 +34,8 @@ target 'WorkruitNew' do
     pod 'AWSCognitoIdentityProvider'
     pod 'AWSS3'
     pod 'FMDB'
+		pod 'Fabric'
+		pod 'Crashlytics'
     # Pods for WorkruitNew
     
     target 'WorkruitNewTests' do

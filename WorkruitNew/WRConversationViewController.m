@@ -1,5 +1,6 @@
 
 #import "WRConversationViewController.h"
+#import <Crashlytics/Crashlytics.h>
 
 @interface WRConversationViewController ()<ChatManagerDelegate,HTTPHelper_Delegate>
 {
@@ -225,6 +226,7 @@
     
 }
 
+
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
@@ -333,6 +335,7 @@
 {
     [super viewDidAppear:animated];
     //[self.collectionView reloadData];
+		NSLog(@"test real convo");
     self.collectionView.collectionViewLayout.springinessEnabled = NO;
 }
 
@@ -721,7 +724,8 @@ viewForSupplementaryElementOfKind:kind
     }
     
     button.enabled = NO;
-    
+	NSLog(@"TEST text: %@ senderId: %@ senderDisName: %@", text, senderId, senderDisplayName);
+	
     [[ChatManager sharedManager] sendMessageFrom:self.senderDisplayName withContent:[self getSendMessageStringWithMessage:text senderId:senderId senderDisplayName:senderDisplayName date:date isTyping:NO] withPayload:[self getMobilePushPayload:text]];
     
     [self finishSendingMessageAnimated:YES];

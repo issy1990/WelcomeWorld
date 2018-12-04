@@ -15,6 +15,7 @@
 #import "WRNotesViewController.h"
 #import "Mixpanel/Mixpanel.h"
 #import "LoadDataManager.h"
+#import <Crashlytics/Crashlytics.h>
 
 @interface WRLoginViewController ()<UITextFieldDelegate>
 {
@@ -96,6 +97,14 @@
     [footerView addSubview:forgot_button];
 
     [footerView addSubview:borderLine2];
+	
+	UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	button.frame = CGRectMake(20, 80, 100, 30);
+	[button setTitle:@"Crash" forState:UIControlStateNormal];
+	[button addTarget:self action:@selector(crashButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+	[footerView addSubview:button];
+	
+	
     self.table_view.tableHeaderView = borderLine1;
     self.table_view.tableFooterView = footerView;
 
@@ -107,7 +116,16 @@
     [Utility setThescreensforiPhonex:myView];
     [[NSUserDefaults standardUserDefaults] setValue:@(NO) forKey:@"_UIConstraintBasedLayoutLogUnsatisfiable"];
 
+	
+
+
 }
+
+- (IBAction)crashButtonTapped:(id)sender {
+	[[Crashlytics sharedInstance] crash];
+	NSLog(@"crash test");
+}
+
 
 -(void)loginButtonAction:(id)sender
 {

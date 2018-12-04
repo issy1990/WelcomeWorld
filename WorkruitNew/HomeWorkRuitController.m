@@ -395,6 +395,7 @@
         }
     }
     else{
+			NSLog(@"login click");
         UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:APPLICANT_STORYBOARD bundle:nil];
         [self.navigationController pushViewController:[mystoryboard instantiateViewControllerWithIdentifier:WRLOGIN_VIEWCONTROLLER_IDENTIFIER] animated:YES];
     }

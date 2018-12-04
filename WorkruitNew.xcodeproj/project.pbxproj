@@ -150,7 +150,6 @@
 		18344C441F7647DE00798585 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18344C401F7647DE00798585 /* SourceSansPro-Regular.ttf */; };
 		18344C451F7647DE00798585 /* SourceSansPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18344C411F7647DE00798585 /* SourceSansPro-Semibold.ttf */; };
 		18344C481F7647EA00798585 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 18344C461F7647EA00798585 /* cities.json */; };
-		18344C491F7647EA00798585 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18344C471F7647EA00798585 /* GoogleService-Info.plist */; };
 		187836251FACF10900E47423 /* ApplicantEditProfileMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187836241FACF10900E47423 /* ApplicantEditProfileMessageView.m */; };
 		187836271FACF11600E47423 /* ApplicantEditProfileMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187836261FACF11600E47423 /* ApplicantEditProfileMessageView.xib */; };
 		18A48D032015CB850085ECC0 /* JobCardTextViewCell_Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A48D022015CB830085ECC0 /* JobCardTextViewCell_Card.xib */; };
@@ -225,6 +224,7 @@
 		76EA72F81FFA292F0095112D /* SkeletonCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76EA72F61FFA292F0095112D /* SkeletonCellTableViewCell.xib */; };
 		76EA72FA1FFA4C0E0095112D /* SkeletonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 76EA72F91FFA4C0E0095112D /* SkeletonImage.png */; };
 		9C25544B2084DB4C00D5E634 /* LoadDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25544A2084DB4C00D5E634 /* LoadDataManager.m */; };
+		CD16D28C21B6B69C0053F98A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD16D28B21B6B69B0053F98A /* GoogleService-Info.plist */; };
 		F862F742373817BDED670FAA /* libPods-WorkruitNew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF86FC42FBE36CCD3009983 /* libPods-WorkruitNew.a */; };
 /* End PBXBuildFile section */
 
@@ -498,7 +498,6 @@
 		18344C401F7647DE00798585 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
 		18344C411F7647DE00798585 /* SourceSansPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.ttf"; sourceTree = "<group>"; };
 		18344C461F7647EA00798585 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
-		18344C471F7647EA00798585 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18344C4A1F76495A00798585 /* WorkruitNew.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkruitNew.entitlements; sourceTree = "<group>"; };
 		187836231FACF10900E47423 /* ApplicantEditProfileMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicantEditProfileMessageView.h; sourceTree = "<group>"; };
 		187836241FACF10900E47423 /* ApplicantEditProfileMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicantEditProfileMessageView.m; sourceTree = "<group>"; };
@@ -645,6 +644,7 @@
 		9C25544A2084DB4C00D5E634 /* LoadDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataManager.m; sourceTree = "<group>"; };
 		BBD644D317EF9D454A6C54CA /* Pods-WorkruitNewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkruitNewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkruitNewTests/Pods-WorkruitNewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7C4E4D4A0A57991F5A05EF8 /* libPods-WorkruitNewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorkruitNewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD16D28B21B6B69B0053F98A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4054560C68F82F501600079 /* Pods-WorkruitNewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkruitNewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkruitNewTests/Pods-WorkruitNewTests.release.xcconfig"; sourceTree = "<group>"; };
 		F852583C3D3798B8B3352EDB /* Pods-WorkruitNewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkruitNewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkruitNewUITests/Pods-WorkruitNewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1145,6 +1145,10 @@
 			isa = PBXGroup;
 			children = (
 				18344C4A1F76495A00798585 /* WorkruitNew.entitlements */,
+				18A5DB091F762E51003CC591 /* LaunchScreen.storyboard */,
+				18A5DB071F762E50003CC591 /* Assets.xcassets */,
+				18A5DB331F76422B003CC591 /* StoryBoards */,
+				18A5DB2F1F7641D6003CC591 /* AppDelegate */,
 				7631A43A2007D29D003CF5E5 /* JSQMessagesViewController */,
 				18344C181F76471E00798585 /* ThirdPary Libraries */,
 				18344C141F76470300798585 /* Reachability */,
@@ -1158,10 +1162,6 @@
 				18344A921F7643D600798585 /* Applicant */,
 				18344A7C1F7643BF00798585 /* Company */,
 				18344A4F1F76439500798585 /* TabController */,
-				18A5DB331F76422B003CC591 /* StoryBoards */,
-				18A5DB2F1F7641D6003CC591 /* AppDelegate */,
-				18A5DB071F762E50003CC591 /* Assets.xcassets */,
-				18A5DB091F762E51003CC591 /* LaunchScreen.storyboard */,
 				18A5DB0C1F762E51003CC591 /* Info.plist */,
 				18A5DAFB1F762E50003CC591 /* Supporting Files */,
 			);
@@ -1172,8 +1172,8 @@
 			isa = PBXGroup;
 			children = (
 				76EA72F91FFA4C0E0095112D /* SkeletonImage.png */,
+				CD16D28B21B6B69B0053F98A /* GoogleService-Info.plist */,
 				18344C461F7647EA00798585 /* cities.json */,
-				18344C471F7647EA00798585 /* GoogleService-Info.plist */,
 				18344C3D1F7647C600798585 /* Fonts */,
 				18A5DAFC1F762E50003CC591 /* main.m */,
 			);
@@ -1404,8 +1404,8 @@
 				18A5DAF41F762E50003CC591 /* Sources */,
 				18A5DAF51F762E50003CC591 /* Frameworks */,
 				18A5DAF61F762E50003CC591 /* Resources */,
-				DB482D20E3539E21EF5FB6D2 /* [CP] Embed Pods Frameworks */,
 				E658D348056E619FEE56F232 /* [CP] Copy Pods Resources */,
+				CD16D27821B695E10053F98A /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -1424,8 +1424,6 @@
 				18A5DB0D1F762E51003CC591 /* Sources */,
 				18A5DB0E1F762E51003CC591 /* Frameworks */,
 				18A5DB0F1F762E51003CC591 /* Resources */,
-				870480D9C58EA15F9E2CE784 /* [CP] Embed Pods Frameworks */,
-				CE0BD18EB1B9A1EF3FFEF9C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1445,8 +1443,6 @@
 				18A5DB181F762E51003CC591 /* Sources */,
 				18A5DB191F762E51003CC591 /* Frameworks */,
 				18A5DB1A1F762E51003CC591 /* Resources */,
-				08B2FDD0734A32A083C12B64 /* [CP] Embed Pods Frameworks */,
-				CF20483DB3A47926BF034628 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1469,7 +1465,6 @@
 				TargetAttributes = {
 					18A5DAF71F762E50003CC591 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 4923ZQB4G4;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1541,7 +1536,6 @@
 			files = (
 				18344B001F76442E00798585 /* MultipleSelectionCell.xib in Resources */,
 				7631A4C32007D29D003CF5E5 /* JSQMessagesToolbarContentView.xib in Resources */,
-				18344C491F7647EA00798585 /* GoogleService-Info.plist in Resources */,
 				18344B981F7645B200798585 /* ApplicantCardView.xib in Resources */,
 				18344AF31F76442E00798585 /* ChatDetailJobViewCell.xib in Resources */,
 				18344B161F76442E00798585 /* CustomSklillsViewCell.xib in Resources */,
@@ -1560,6 +1554,7 @@
 				18344BB71F7645D600798585 /* JobCardHeaderCellNew.xib in Resources */,
 				18344B061F76442E00798585 /* CustomSalarySilderCell.xib in Resources */,
 				18344B181F76442E00798585 /* CustomPreferencesCell.xib in Resources */,
+				CD16D28C21B6B69C0053F98A /* GoogleService-Info.plist in Resources */,
 				76EA72FA1FFA4C0E0095112D /* SkeletonImage.png in Resources */,
 				18A48D032015CB850085ECC0 /* JobCardTextViewCell_Card.xib in Resources */,
 				18344A4C1F76437200798585 /* Main.storyboard in Resources */,
@@ -1622,21 +1617,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08B2FDD0734A32A083C12B64 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkruitNewUITests/Pods-WorkruitNewUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5E429BBD93410858789B4923 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1653,21 +1633,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		870480D9C58EA15F9E2CE784 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkruitNewTests/Pods-WorkruitNewTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8ACE75994D67AB01CA65F5C2 /* [CP] Check Pods Manifest.lock */ = {
@@ -1706,50 +1671,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CE0BD18EB1B9A1EF3FFEF9C5 /* [CP] Copy Pods Resources */ = {
+		CD16D27821B695E10053F98A /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "Run Script";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkruitNewTests/Pods-WorkruitNewTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF20483DB3A47926BF034628 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkruitNewUITests/Pods-WorkruitNewUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB482D20E3539E21EF5FB6D2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkruitNew/Pods-WorkruitNew-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\" 3ec0c186f684b77d1740f619d43c0ce856f6eae4 eecb6cfa0a83fe28e8eda57150ae435465cf0cdd516e0ea2c14160fe0dc3fdae\n";
 		};
 		E658D348056E619FEE56F232 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1782,7 +1720,27 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Resources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ASJTag.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPArrowLeft.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPArrowLeft@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPArrowRight.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPArrowRight@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCheckmark.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCheckmark@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButton.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButton@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButton@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDismissKeyboard.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDismissKeyboard@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPLogo.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPLogo@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/placeholder-image.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPTakeoverNotificationViewController~ipad.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPTakeoverNotificationViewController~iphonelandscape.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPTakeoverNotificationViewController~iphoneportrait.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/rskimagecropperstrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TDBSimpleWhite.nib",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2015,7 +1973,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manikanth Challa (T77G2W93SR)";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2098,6 +2056,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2124,6 +2083,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

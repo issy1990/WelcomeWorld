@@ -7,34 +7,34 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>359675688873-jsu67tjkeq9hu83ou7s47ptbreovn4uk.apps.googleusercontent.com</string>
+	<string>1036411696217-nmab5o968rck46nv3ln5a150fojiqkhr.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.359675688873-jsu67tjkeq9hu83ou7s47ptbreovn4uk</string>
+	<string>com.googleusercontent.apps.1036411696217-nmab5o968rck46nv3ln5a150fojiqkhr</string>
 	<key>API_KEY</key>
-	<string>AIzaSyD3Uy7UwMEPx49hSfbJWQl6ZX3UFD-X518</string>
+	<string>AIzaSyBLv2U9t9i6XbnScgbSQVblYHRmR-FTH8E</string>
 	<key>GCM_SENDER_ID</key>
-	<string>359675688873</string>
+	<string>1036411696217</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.workruit</string>
 	<key>PROJECT_ID</key>
-	<string>workruit-f6542</string>
+	<string>crashlyticstests-6eef0</string>
 	<key>STORAGE_BUCKET</key>
-	<string>workruit-f6542.appspot.com</string>
+	<string>crashlyticstests-6eef0.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<true/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:359675688873:ios:ad6d40909a3cf001</string>
+	<string>1:1036411696217:ios:ad6d40909a3cf001</string>
 	<key>DATABASE_URL</key>
-	<string>https://workruit-f6542.firebaseio.com</string>
+	<string>https://crashlyticstests-6eef0.firebaseio.com</string>
 </dict>
 </plist>

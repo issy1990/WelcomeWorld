@@ -104,6 +104,10 @@
     [self loadDataFromService];
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+	NSLog(@"test convo");
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

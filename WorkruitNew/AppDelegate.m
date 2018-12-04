@@ -15,6 +15,8 @@
 #import <AWSCognito/AWSCognito.h>
 #import "WRVerifyMobileController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <Crashlytics/Crashlytics.h>
+#import <Fabric/Fabric.h>
 
 
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
@@ -63,7 +65,8 @@
     [self confrigrationPushNotification];
     [self configureReachability];
     [[FMDBDataAccess sharedInstance] start];
-
+		[Fabric with:@[[Crashlytics class], [AWSCognito class]]];
+		[Fabric sharedSDK].debug = YES;
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
     self.notification_container = [CWStatusBarNotification new];

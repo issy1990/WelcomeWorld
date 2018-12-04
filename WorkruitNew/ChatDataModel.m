@@ -15,7 +15,7 @@
 //Message object model
 + (JSQMessage *)getMessageObject:(NSDictionary *)item
 {
-    NSString *text_Messsage = item[@"msg"];;
+    NSString *text_Messsage = item[@"msg"];
     NSString *name = item[@"to_id"];
     NSString *userId = item[@"to_id"];
     NSDate *date = [NSDate date];// String2Date(item[@"date"]);
